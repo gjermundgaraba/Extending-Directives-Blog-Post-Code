@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="bower_components/ng-multi-transclude/src/multi-transclude.js"></script>
+
+    <script src="app.js"></script>
+
+    <script src="require/require.js"></script>
+    <script src="require/extension/requireExtension.js"></script>
+
+    <script src="requireStack/requireStack.js"></script>
+    <script src="requireStack/extension/requireStackExtension.js"></script>
+
+    <script src="stackWithScope/stackWithScope.js"></script>
+    <script src="stackWithScope/extension/stackWithScopeExtension.js"></script>
+
+    <script src="simpleTransclude/simpleTransclude.js"></script>
+
+    <script src="multipleTransclude/multipleTransclude.js"></script>
+
+    <script src="delegate/delegateBase.js"></script>
+    <script src="delegate/extension/delegateExtension.js"></script>
+</head>
+<body>
+
+<require require-extension></require>
+
+<require-stack></require-stack>
+
+<stack></stack>
+
+<hr>
+
+<simple-translcude>
+    <div>
+        <button>A Button</button>
+        <button>Another Button</button>
+    </div>
+</simple-translcude>
+
+<multiple-transclude>
+    <img name="left" style="max-width:100%;max-height:100%;" src="angularlogo.jpg">
+    <div name="right">
+        <button>A Button</button>
+        <button>Another Button</button>
+    </div>
+</multiple-transclude>
+
+<delegate-extension></delegate-extension>
+
+</body>
+</html>
